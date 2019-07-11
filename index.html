@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IQ Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Six+Caps&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='test'>
+        <h1>IQ TEST</h1>
+        <hr>
+
+        <!-- Question 1 -->
+        <h2>Question 1</h2>
+        <p>Which way is she turning?<br>(Left, Right, or Both)</p>
+        <p><img src="images/turn.gif" width="200px"></p>
+        <p>Answer: <input type="text" id="q1"></p>
+        <!-- <hr> -->
+
+        <!-- Question 2 -->
+        <h2>Question 2</h2>
+        <p>What number do you see? (<span id="q2-hint">HINT</span>)</p>
+        <img src="images/num17.jpg" width="350px">
+        <p>Answer: <input type="number" id="q2"></p>
+        <!-- <hr> -->
+
+        <!-- Question 3 -->
+        <h2>Question 3</h2>
+        <p>How many numbers do you see in the picture?</p>
+        <img src="images/countNum10.png" width="350px">
+        <p>Answer: <input type="number" id="q3"></p>
+        <!-- <hr> -->
+
+        <!-- Question 4 -->
+        <h2>Question 4</h2>
+        <p id="quote"><i>"What room do ghosts avoid?"</i></p>
+        <p>Answer: <input type="text" id="q4"></p>
+        <!-- <hr> -->
+
+        <h2>Results</h2>
+        <p><button>Mark Quiz!</button></p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
