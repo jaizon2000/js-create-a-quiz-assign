@@ -9,7 +9,8 @@
 
 <body>
     <div class='test'>
-        <h1>IQ TEST</h1>
+        <!-- Anchor -->
+        <h1><a id="top">IQ TEST</a></h1>
         <hr>
 
         <!-- Question 1 -->
@@ -24,7 +25,7 @@
         <p>What number do you see?</p>
         <img src="images/num17.jpg" width="350px">
         <p>Answer: <input type="number" id="q2"></p>
-        <p id="q2-why" class="why-box hide"><b>Blink</b> your eyes rapidly or<br><b>Scroll up and down</b> your screen.</p>
+        <p id="q2-why" class="why-box hide"><b>Blink</b> your eyes rapidly or<br><b>Scroll</b> your screen up and down .</p>
 
         <!-- Question 3 -->
         <h2>Question 3</h2>
@@ -41,9 +42,11 @@
 
 
         <h2>Results</h2>
-        <p><button id="mark-quiz">Mark Quiz!</button></p>
-        <p id="result"></p>
+        <button id="mark-quiz">Mark Quiz!</button>
         <button id="explain" class="hide">Explain Answers</button>
+        <a href='#top'><button>Go to Top</button></a>
+        <p id="result"></p>
+        <p id='comment'></p>
     </div>
 
     <!-- Javascript -->

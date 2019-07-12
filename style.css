@@ -3,7 +3,11 @@ body {
 
     margin: 0 auto;
     width: 800px;
-    background-color: rgb(140, 147, 168);
+
+    background: rgba(170, 186, 158) url('images/bg.jpg') no-repeat fixed top;
+    background-size: cover;
+    
+
 
 }
 div.test {
@@ -29,7 +33,7 @@ h2 {
     transition: 0.5s;
 }
 h2:hover {
-    background-color: #BA9921;
+    background-color: #aaba9e;
     color: white;
     border: 1px solid rgb(95, 52, 23);
 }
@@ -62,12 +66,38 @@ a {
     transition: 0.2s;
     
 }
-a:hover {
+a.why-box:hover {
     color: #d3af3a;
+}
+a#explain {
+    text-decoration: none;
 }
 
 button {
     padding: 10px 30px;
     font-size: 1em;
-    
+    transition-duration: 0.4s;
+    border: none;
+    background-color: #AABA9E;
+}
+button:hover {
+    background-color: #FCB97D;
+    color: white;
+    border: 1px solid rgb(104, 96, 69);
+    cursor: pointer;
+}
+button#explain {
+    background-color: #EDD892;
+}
+a > button {
+    background-color: #C6B89E;
+}
+
+#result {
+    font-size: 50pt;
+    margin: 0;
+    padding-top: 50px;
+}
+#comment {
+    font-size: 15pt;
 }

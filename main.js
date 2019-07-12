@@ -11,10 +11,13 @@ let score = 0;
 
 // Function
 function main() {
-    document.getElementById('explain').classList.remove('hide');
+    // Explain Answers button
     // Event Listener only after taking first try
+        // Shows button
+    document.getElementById('explain').classList.remove('hide');
     document.getElementById('explain').addEventListener('click', explainAns);
 
+    // GET INPUT
     let q1 = document.getElementById("q1");
     let q1Ans = q1.value;
 
@@ -31,7 +34,7 @@ function main() {
     if (q1Ans.toLowerCase() == 'both') {
         q1.classList.remove('wrong');
         q1.classList.add('correct');
-        scrore++
+        score++
 
     } else {
         q1.classList.remove('correct');
@@ -74,6 +77,26 @@ function main() {
         q4.classList.remove('correct');
         q4.classList.add('wrong');
     }
+
+    // PROCESS - Calculate Score
+    Math.floor(score = score/4 * 100);
+    // OUTPUT - display output
+    let comment = document.getElementById('comment');
+    document.getElementById('result').innerHTML = score + '%';
+    if (score == 0) {
+        comment.innerHTML = 'Did you study?? :(';
+        comment.style.fontWeight = 'bold';
+    } else if (score == 25) {
+        comment.innerHTML = 'You might wanna study... :/';
+    } else if (score == 75) {
+        comment.innerHTML = 'Yay! You passed!! :)';
+    } else if (score == 100) {
+        comment.innerHTML = 'Welcome to the club, Einstein! :D';
+        comment.style.color = '#666B4E';
+        
+    }
+    // reset counter
+    score = 0;
 }
 
 // EXPLAIN ANSWERS
