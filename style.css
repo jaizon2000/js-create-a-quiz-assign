@@ -28,11 +28,17 @@ h2{
     border: 1px solid black;
 
 }
-hr {
-    width: 70%;
+p {
+    font-size: 1.2em;
 }
 
 #quote {
     font-size: 3em;
     margin: 0;
+}
+.correct {
+    background-color: #2bf25d;
+}
+.wrong {
+    background-color: #F22B2B;
 }
