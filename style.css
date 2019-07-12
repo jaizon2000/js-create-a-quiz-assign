@@ -7,18 +7,21 @@ body {
     background: rgba(170, 186, 158) url('images/bg.jpg') no-repeat fixed top;
     background-size: cover;
 }
+
 div.test {
     text-align: center;
     background-color: rgba(226, 226, 226, 0.7);
 
     padding: 100px;
 }
+
 h1 {
     font-family: 'Six Caps', sans-serif;
     font-size: 7em;
     letter-spacing: 5px;
     margin: 0;
 }
+
 h2 {
     font-family: 'Six Caps', sans-serif;
     font-size: 4em;
@@ -29,11 +32,13 @@ h2 {
     border: 1px solid black;
     transition: 0.2s;
 }
+
 h2:hover {
     background-color: #aaba9e;
     color: white;
     border: 1px solid rgb(95, 52, 23);
 }
+
 p {
     font-size: 1.2em;
 }
@@ -42,17 +47,20 @@ p {
     font-size: 3em;
     margin: 0;
 }
+
 .correct {
     background-color: #2bf25d;
 }
+
 .wrong {
     background-color: #F22B2B;
 }
 
 .why-box {
     border: 2px solid rgba(237, 198, 56, 0.65);
-    background-color:  rgba(237, 198, 56, 0.25);
+    background-color: rgba(237, 198, 56, 0.25);
 }
+
 .hide {
     display: none;
 }
@@ -61,11 +69,13 @@ a {
     text-decoration: none;
     color: #584d26;
     transition: 0.2s;
-    
+
 }
+
 a.why-box:hover {
     color: #d3af3a;
 }
+
 a#explain {
     text-decoration: none;
 }
@@ -77,16 +87,19 @@ button {
     border: none;
     background-color: #AABA9E;
 }
+
 button:hover {
     background-color: #FCB97D;
     color: white;
     border: 1px solid rgb(104, 96, 69);
     cursor: pointer;
 }
+
 button#explain {
     background-color: #EDD892;
 }
-a > button {
+
+a>button {
     background-color: #C6B89E;
 }
 
@@ -95,6 +108,7 @@ a > button {
     margin: 0;
     padding-top: 50px;
 }
+
 #comment {
     font-size: 15pt;
 }

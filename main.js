@@ -13,7 +13,7 @@ let score = 0;
 function main() {
     // Explain Answers button
     // Event Listener only after taking first try
-        // Shows button
+    // Shows button
     document.getElementById('explain').classList.remove('hide');
     document.getElementById('explain').addEventListener('click', explainAns);
 
@@ -79,7 +79,7 @@ function main() {
     }
 
     // PROCESS - Calculate Score
-    Math.floor(score = score/4 * 100);
+    Math.floor(score = score / 4 * 100);
     // OUTPUT - display output
     let comment = document.getElementById('comment');
     document.getElementById('result').innerHTML = score + '%';
@@ -93,9 +93,9 @@ function main() {
     } else if (score == 100) {
         comment.innerHTML = 'Welcome to the club, Einstein! :D';
         comment.style.color = '#666B4E';
-        
+
     }
-    
+
     // reset counter
     score = 0;
 }
