@@ -95,6 +95,7 @@ function main() {
         comment.style.color = '#666B4E';
         
     }
+    
     // reset counter
     score = 0;
 }
