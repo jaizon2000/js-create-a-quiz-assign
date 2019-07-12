@@ -18,7 +18,7 @@ h1 {
     letter-spacing: 5px;
     margin: 0;
 }
-h2{
+h2 {
     font-family: 'Six Caps', sans-serif;
     font-size: 4em;
     letter-spacing: 5px;
@@ -26,7 +26,12 @@ h2{
     font-weight: lighter;
 
     border: 1px solid black;
-
+    transition: 0.5s;
+}
+h2:hover {
+    background-color: #BA9921;
+    color: white;
+    border: 1px solid rgb(95, 52, 23);
 }
 p {
     font-size: 1.2em;
@@ -41,4 +46,28 @@ p {
 }
 .wrong {
     background-color: #F22B2B;
+}
+
+.why-box {
+    border: 2px solid rgba(237, 198, 56, 0.65);
+    background-color:  rgba(237, 198, 56, 0.25);
+}
+.hide {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #584d26;
+    transition: 0.2s;
+    
+}
+a:hover {
+    color: #d3af3a;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 1em;
+    
 }

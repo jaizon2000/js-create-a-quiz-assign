@@ -6,9 +6,15 @@
 // Event Listener
 document.getElementById('mark-quiz').addEventListener('click', main);
 
+// GLOBAL VARS
+let score = 0;
 
 // Function
 function main() {
+    document.getElementById('explain').classList.remove('hide');
+    // Event Listener only after taking first try
+    document.getElementById('explain').addEventListener('click', explainAns);
+
     let q1 = document.getElementById("q1");
     let q1Ans = q1.value;
 
@@ -25,10 +31,12 @@ function main() {
     if (q1Ans.toLowerCase() == 'both') {
         q1.classList.remove('wrong');
         q1.classList.add('correct');
+        scrore++
 
     } else {
         q1.classList.remove('correct');
         q1.classList.add('wrong');
+
     }
 
 
@@ -36,6 +44,7 @@ function main() {
     if (q2Ans == 17) {
         q2.classList.remove('wrong');
         q2.classList.add('correct');
+        score++
 
     } else {
         q2.classList.remove('correct');
@@ -47,6 +56,7 @@ function main() {
     if (q3Ans == 10) {
         q3.classList.remove('wrong');
         q3.classList.add('correct');
+        score++
 
     } else {
         q3.classList.remove('correct');
@@ -58,9 +68,20 @@ function main() {
     if (q4Ans.toLowerCase() == 'the living room' || q4Ans.toLowerCase() == 'living room') {
         q4.classList.remove('wrong');
         q4.classList.add('correct');
+        score++
 
     } else {
         q4.classList.remove('correct');
         q4.classList.add('wrong');
     }
+}
+
+// EXPLAIN ANSWERS
+function explainAns() {
+    // Explain Answer
+    document.getElementById('q1-why').classList.toggle('hide');
+    document.getElementById('q2-why').classList.toggle('hide');
+    document.getElementById('q3-why').classList.toggle('hide');
+    document.getElementById('q4-why').classList.toggle('hide');
+
 }
